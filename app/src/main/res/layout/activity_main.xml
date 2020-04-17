@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:hint="введите текст"
+        android:background="#cccccc"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/from_char"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="22dp"
+        android:background="#cccccc"
+        android:ems="10"
+        android:width="40dp" />
+    <EditText
+        android:id="@+id/to_char"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/from_char"
+        android:layout_toRightOf="@+id/from_char"
+        android:layout_marginLeft="100dp"
+        android:width="40dp"
+        android:background="#cccccc"
+        android:ems="10" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/from_char"
+        android:layout_toRightOf="@+id/to_char"
+        android:layout_marginLeft="50dp"
+        android:onClick="replace"
+        android:text="заменить" />
+
+
+
+</RelativeLayout>
